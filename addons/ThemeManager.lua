@@ -175,7 +175,7 @@ local ThemeManager = {
 		AccentColor = "fb4934",
 		BackgroundColor = "282828",
 		OutlineColor = "504945",
-		BackgroundImage = "" },
+		BackgroundImage = "",
     },
 },			
     ["One Dark"] = {
