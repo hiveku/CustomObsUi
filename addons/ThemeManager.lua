@@ -57,79 +57,138 @@ local ThemeManager = {
     ContrastWasPoor = false,
 
     BuiltInThemes = {
-        ["Default"] = {
-            1,
-            { FontColor = "ffffff", MainColor = "191919", AccentColor = "7d55ff", BackgroundColor = "0f0f0f", OutlineColor = "282828", BackgroundImage = "" },
+["Angelic"] = {
+    1,
+    {
+        FontColor       = "faf5e6",
+        MainColor       = "1e1a14",
+        AccentColor     = "f5e6b8",
+        BackgroundColor = "14110c",
+        OutlineColor    = "463c2d",
+        BackgroundImage = "",
+    },
+},
+["Mono"] = {
+    2,
+    {
+        FontColor       = "ffffff",
+        MainColor       = "111111",
+        AccentColor     = "ffffff",
+        BackgroundColor = "000000",
+        OutlineColor    = "333333",
+        BackgroundImage = "",
+    },
+},
+["Fatality"] = {
+    3,
+    {
+        FontColor       = "ffffff",
+        MainColor       = "1e1842",
+        AccentColor     = "c50754",
+        BackgroundColor = "191335",
+        OutlineColor    = "3c355d",
+        BackgroundImage = "",
+    },
+},
+["Jester"] = {
+    4,
+    {
+        FontColor       = "ffffff",
+        MainColor       = "242424",
+        AccentColor     = "db4467",
+        BackgroundColor = "1c1c1c",
+        OutlineColor    = "373737",
+        BackgroundImage = "",
+    },
+},
+["Forest"] = {
+    5,
+    {
+        FontColor       = "e8f0e0",
+        MainColor       = "16201a",
+        AccentColor     = "6fc23f",
+        BackgroundColor = "0c1410",
+        OutlineColor    = "2a3d2e",
+        BackgroundImage = "",
+    },
+},
+["Tokyo Night"] = {
+    6,
+    {
+        FontColor       = "ffffff",
+        MainColor       = "191925",
+        AccentColor     = "6759b3",
+        BackgroundColor = "16161f",
+        OutlineColor    = "323232",
+        BackgroundImage = "",
+    },
+},
+["Ubuntu"] = {
+    7,
+    {
+        FontColor       = "ffffff",
+        MainColor       = "3e3e3e",
+        AccentColor     = "e2581e",
+        BackgroundColor = "323232",
+        OutlineColor    = "191919",
+        BackgroundImage = "",
+    },
+},
+["Blood"] = {
+    8,
+    {
+        FontColor       = "fae8e8",
+        MainColor       = "1a0e0e",
+        AccentColor     = "d92b3a",
+        BackgroundColor = "0c0505",
+        OutlineColor    = "3d1a1a",
+        BackgroundImage = "",
+    },
+},
+["Sunset"] = {
+    9,
+    {
+        FontColor       = "fae6d8",
+        MainColor       = "2a1a12",
+        AccentColor     = "ff7f50",
+        BackgroundColor = "1a0e08",
+        OutlineColor    = "4a2a1a",
+        BackgroundImage = "",
+    },
+},
+["Ice"] = {
+    10,
+    {
+        FontColor       = "d8f0fa",
+        MainColor       = "14202a",
+        AccentColor     = "9de0ff",
+        BackgroundColor = "0a1018",
+        OutlineColor    = "2a4055",
+        BackgroundImage = "",
+    },
+},
+["Gruvbox"] = {
+    11,
+    {
+        FontColor = "ebdbb2",
+        MainColor = "3c3836",
+		AccentColor = "fb4934",
+		BackgroundColor = "282828",
+		OutlineColor = "504945",
+		BackgroundImage = "" },
+    },
+},			
+    ["One Dark"] = {
+        12,
+        {
+            FontColor       = "abb2bf",
+            MainColor       = "282c34",
+            AccentColor     = "c678dd",
+            BackgroundColor = "21252b",
+            OutlineColor    = "5c6370",
+            BackgroundImage = "",
         },
-        ["BBot"] = {
-            2,
-            { FontColor = "ffffff", MainColor = "1e1e1e", AccentColor = "7e48a3", BackgroundColor = "232323", OutlineColor = "141414", BackgroundImage = "" },
-        },
-        ["Fatality"] = {
-            3,
-            { FontColor = "ffffff", MainColor = "1e1842", AccentColor = "c50754", BackgroundColor = "191335", OutlineColor = "3c355d", BackgroundImage = "" },
-        },
-        ["Jester"] = {
-            4,
-            { FontColor = "ffffff", MainColor = "242424", AccentColor = "db4467", BackgroundColor = "1c1c1c", OutlineColor = "373737", BackgroundImage = "" },
-        },
-        ["Mint"] = {
-            5,
-            { FontColor = "ffffff", MainColor = "242424", AccentColor = "3db488", BackgroundColor = "1c1c1c", OutlineColor = "373737", BackgroundImage = "" },
-        },
-        ["Tokyo Night"] = {
-            6,
-            { FontColor = "ffffff", MainColor = "191925", AccentColor = "6759b3", BackgroundColor = "16161f", OutlineColor = "323232", BackgroundImage = "" },
-        },
-        ["Ubuntu"] = {
-            7,
-            { FontColor = "ffffff", MainColor = "3e3e3e", AccentColor = "e2581e", BackgroundColor = "323232", OutlineColor = "191919", BackgroundImage = "" },
-        },
-        ["Quartz"] = {
-            8,
-            { FontColor = "ffffff", MainColor = "232330", AccentColor = "426e87", BackgroundColor = "1d1b26", OutlineColor = "27232f", BackgroundImage = "" },
-        },
-        ["Nord"] = {
-            9,
-            { FontColor = "eceff4", MainColor = "3b4252", AccentColor = "88c0d0", BackgroundColor = "2e3440", OutlineColor = "4c566a", BackgroundImage = "" },
-        },
-        ["Dracula"] = {
-            10,
-            { FontColor = "f8f8f2", MainColor = "44475a", AccentColor = "ff79c6", BackgroundColor = "282a36", OutlineColor = "6272a4", BackgroundImage = "" },
-        },
-        ["Monokai"] = {
-            11,
-            { FontColor = "f8f8f2", MainColor = "272822", AccentColor = "f92672", BackgroundColor = "1e1f1c", OutlineColor = "49483e", BackgroundImage = "" },
-        },
-        ["Gruvbox"] = {
-            12,
-            { FontColor = "ebdbb2", MainColor = "3c3836", AccentColor = "fb4934", BackgroundColor = "282828", OutlineColor = "504945", BackgroundImage = "" },
-        },
-        ["Solarized"] = {
-            13,
-            { FontColor = "839496", MainColor = "073642", AccentColor = "cb4b16", BackgroundColor = "002b36", OutlineColor = "586e75", BackgroundImage = "" },
-        },
-        ["Catppuccin"] = {
-            14,
-            { FontColor = "d9e0ee", MainColor = "302d41", AccentColor = "f5c2e7", BackgroundColor = "1e1e2e", OutlineColor = "575268", BackgroundImage = "" },
-        },
-        ["One Dark"] = {
-            15,
-            { FontColor = "abb2bf", MainColor = "282c34", AccentColor = "c678dd", BackgroundColor = "21252b", OutlineColor = "5c6370", BackgroundImage = "" },
-        },
-        ["Cyberpunk"] = {
-            16,
-            { FontColor = "f9f9f9", MainColor = "262335", AccentColor = "00ff9f", BackgroundColor = "1a1a2e", OutlineColor = "413c5e", BackgroundImage = "" },
-        },
-        ["Oceanic Next"] = {
-            17,
-            { FontColor = "d8dee9", MainColor = "1b2b34", AccentColor = "6699cc", BackgroundColor = "16232a", OutlineColor = "343d46", BackgroundImage = "" },
-        },
-        ["Material"] = {
-            18,
-            { FontColor = "eeffff", MainColor = "212121", AccentColor = "82aaff", BackgroundColor = "151515", OutlineColor = "424242", BackgroundImage = "" },
-        }
-    }
+    },
 }
 
 function ThemeManager:SetLibrary(Library)
