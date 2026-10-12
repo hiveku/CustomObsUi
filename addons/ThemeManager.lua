@@ -57,7 +57,7 @@ local ThemeManager = {
     ContrastWasPoor = false,
 
     BuiltInThemes = {
-        ["Angelic"] = {
+        ["Default"] = {
             1,
             {
                 FontColor       = "faf5e6",
@@ -189,7 +189,7 @@ local ThemeManager = {
                 BackgroundImage = "",
             },
         },
-    }
+    },
 }
 function ThemeManager:SetLibrary(Library)
     ThemeManager.Library = Library
