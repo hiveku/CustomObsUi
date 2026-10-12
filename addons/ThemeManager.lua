@@ -190,7 +190,7 @@ local ThemeManager = {
             },
         },
     }
-
+}
 function ThemeManager:SetLibrary(Library)
     ThemeManager.Library = Library
 end
